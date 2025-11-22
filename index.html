@@ -1,2 +1,104 @@
-<h1>Naan Mudhalvan 2024</h1>
-<h2>static page</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Background and Layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #a8e6cf, #dcedc1, #ffab91);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin: 50px 0 20px;
+            color: #ffffff;
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #4CAF50;
+            padding: 15px;
+            width: 100%;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 12px 25px;
+            background: #3E8E41;
+            border-radius: 25px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #66bb6a;
+            transform: scale(1.05);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            text-align: center;
+            width: 100%;
+        }
+
+        .content {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            margin: 0 20px;
+        }
+
+        .content p {
+            font-size: 1rem;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SNJ Hospitals</h1>
+    <nav>
+        <a href="/register_patient">Register Patient</a>
+        <a href="/register_doctor">Register Doctor</a>
+        <a href="/appointments">Book Appointment</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+          <p>Welcome to SNJ Hospitals – where compassion meets care, and technology empowers healing. Your health, our priority.</p>
+        </div>
+    </div>
+</body>
+
+</html>
